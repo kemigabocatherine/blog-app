@@ -1,24 +1,35 @@
-# README
+# Blog-App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Blog app is a classic example of a blog website.It is a fully functional website that shows the list of posts and empowers readers to interact with them by adding comments and liking posts.
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+To get a local copy of the app up and running,
 
-* System dependencies
+1) Go to your terminal and navigate to where you want to store the project repository
+2) run the command `$git clone git@github.com:kemigabocatherine/blog-app.git`
+3) `cd blog-app`
 
-* Configuration
+## Author
 
-* Database creation
+👤 **Kemigabo Catherine**
 
-* Database initialization
+- GitHub: [@githubhandle](https://github.com/kemigabocatherine)
+- Twitter: [@twitterhandle](https://twitter.com/home?lang=en)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kemigabocatherine/)
 
-* How to run the test suite
+## 🤝 Contributing
 
-* Services (job queues, cache servers, search engines, etc.)
+Contributions, issues, and feature requests are welcome!
 
-* Deployment instructions
+## Show your support
 
-* ...
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse for their RUBY modules which made this a great project for practicing my knowledge of the Ruby basics
+
+## 📝 License
+
+This project is [MIT](https://github.com/kemigabocatherine/School-Library/blob/classes/LICENSE) licensed.
