@@ -1,12 +1,12 @@
 require 'rails_helper'
 
 RSpec.describe Post, type: :model do
-    before :each do
-      @user = User.new(name: 'Cathy', photo: 'image', bio: 'Hey', posts_counter: 0)
-      @user.save
-      @post = Post.new(user: @user, title: 'Post 1', text: 'text 1', comments_counter: 0, likes_counter: 0)
-      @post.save
-    end
+  before :each do
+    @user = User.new(name: 'Cathy', photo: 'image', bio: 'Hey', posts_counter: 0)
+    @user.save
+    @post = Post.new(user: @user, title: 'Post 1', text: 'text 1', comments_counter: 0, likes_counter: 0)
+    @post.save
+  end
 
   describe 'Post Model properties' do
     it 'title should be present' do
