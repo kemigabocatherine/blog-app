@@ -1,1 +1,26 @@
-<h1>Users#Index<h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog App</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>  
+</head>
+<body>
+    <ul>
+      <% @users.each do |user| %>
+        <div class="user_container">
+          <div>
+            <img src = "<%= user.photo %>" alt= "User image">
+          </div>
+          <div class="user-info">
+            <h1><%= user.name %></h1>
+            <p>Number of posts: <%= user.posts_counter %></p>
+          </div>
+          <%= link_to "Details", user_path(user.id), {:class => "button_class"} %>
+        </div>
+      <% end %>
+    </ul>    
+</body>
+</html>
+
