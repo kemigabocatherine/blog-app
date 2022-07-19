@@ -10,13 +10,18 @@ To get a local copy of the app up and running,
 2) run the command `$git clone git@github.com:kemigabocatherine/blog-app.git`
 3) `cd blog-app`
 
-## Author
+## Authors
 
 👤 **Kemigabo Catherine**
 
 - GitHub: [@githubhandle](https://github.com/kemigabocatherine)
 - Twitter: [@twitterhandle](https://twitter.com/home?lang=en)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/kemigabocatherine/)
+
+👤 **Tafara Mafemba**
+
+- GitHub: [@tafaramafemba](https://github.com/tafaramafemba)
+- LinkedIn: [Tafara Mafemba](https://www.linkedin.com/in/tafara-mafemba)
 
 ## 🤝 Contributing
 
