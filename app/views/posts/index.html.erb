@@ -17,7 +17,7 @@
         </div>
       <%end%>
       <div class="comments-container">
-        <% post.recent_comments.each do |comment| %>
+        <% post.recent_comments.includes([:user]).each do |comment| %>
           <p><%= comment.user.name %>: <%= comment.text%></p>
         <% end %>
       </div>
