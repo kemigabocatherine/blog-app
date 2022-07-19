@@ -4,10 +4,10 @@ RSpec.describe 'Show User', type: :feature do
   describe 'Post' do
     before(:each) do
       @user = User.create!(name: 'Thomas', photo: 'https://unsplash.com/photos/F_0BxGuVvo',
-                           bio: 'Teacher from Hungary.', postscounter: 0)
+                           bio: 'Teacher from Hungary.', posts_counter: 0)
 
       @user2 = User.create!(name: 'Jinding', photo: 'https://unsplash.com/photos/F_0BxGuVvo',
-                            bio: 'Teacher from Jamaica.', postscounter: 0)
+                            bio: 'Teacher from Jamaica.', posts_counter: 0)
 
       @post = @user.posts.create!(title: 'My post', text: 'this is my first post')
 
