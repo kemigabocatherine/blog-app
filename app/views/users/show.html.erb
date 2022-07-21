@@ -1,20 +1,24 @@
 <div class="user_container">
+  <nav><%= link_to "Home", users_path(@user), class: "link" %></nav>
+  <br>
   <div>
     <img src = "<%= @user.photo %>" alt= "User image">
   </div>
   <div class="user-info">
     <h1><%= @user.name %></h1>
-    <p>Number of posts: <%= @user.posts_counter %></p>
+    <p><strong>Number of posts:</strong> <%= @user.posts_counter %></p>
   </div>
-  <p>Bio</p>
+  <strong><p>Bio</p></strong>
   <p><%= @user.bio %></p>
-  <p>Post</p>
+  <%= link_to "Create Post", new_post_path, class: "link" %>
+  <h2>Posts</h2>
   <% @user.recent_posts.each do |post| %>
     <div class= 'post_container'>
-      <%= post.title%>
-      <%= post.text%>
-      <p>Comments: <%= post.comments_counter%></p><p>Likes: <%= post.likes_counter%></p>
+      <h3><%= post.title%></h3>
+      <p><%= post.text%></p>
+      <p><strong>Comments:</strong> <%= post.comments_counter%></p><p><strong>Likes:</strong> <%= post.likes_counter%></p>
     </div>
+    <hr>
   <% end %>
 </div>
 <button class="button">
