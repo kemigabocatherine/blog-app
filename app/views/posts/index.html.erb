@@ -1,3 +1,4 @@
+<nav><%= link_to "Home", users_path(@user), class: "link" %></nav>
 <div>
   <div>
     <img src = "<%= @user.photo %>" alt= "User image">
@@ -9,13 +10,14 @@
 
   <ul>
     <% @user.posts.each do |post| %>
-      <%=link_to user_post_path(@user, post) do %>
         <div class="post_container">
-          <%= post.title%>
+          <%=link_to user_post_path(@user, post) do %>
+            <h3><%= post.title%></h3>
+          <% end %>
           <%= post.text%>
-          <p>Comments: <%= post.comments_counter%></p><p>Likes: <%= post.likes_counter%></p>
+          <strong><p>Comments:</strong> <%= post.comments_counter%></p>
+          <strong><p>Likes:</strong> <%= post.likes_counter%></p>
         </div>
-      <%end%>
       <div class="comments-container">
         <% post.recent_comments.includes([:user]).each do |comment| %>
           <p><%= comment.user.name %>: <%= comment.text%></p>
