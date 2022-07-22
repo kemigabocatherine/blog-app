@@ -1,0 +1,6 @@
+<h1>My Blog App</h1>
+<% if user_signed_in? %>
+  <li>
+    <%= link_to "Blogs", users_path %>
+  </li>
+<% end %>
