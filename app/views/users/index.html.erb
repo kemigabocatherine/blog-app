@@ -1,0 +1,17 @@
+<h1>Blogs</h1>
+
+<ul>
+  <% @users.each do |user| %>
+    <div class="user_container">
+      <div>
+        <img src = "<%= user.photo %>" alt= "User image">
+      </div>
+      <div class="user-info">
+        <h1><%= user.name %></h1>
+        <p><strong>Number of posts:</strong> <%= user.posts_counter %></p>
+      </div>
+      <%= link_to "Details", user_path(user.id), {:class => "button_class"} %>
+    </div>
+  <% end %>
+</ul>  
+

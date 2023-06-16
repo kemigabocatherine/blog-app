@@ -1,0 +1,11 @@
+<%= form_with model: [@user, @post, @comment] do |f| %>
+  <h2>Add a comment</h2>
+
+  <div>
+    <%= f.text_area :text, placeholder: "Write your comment here", required: true%>
+  </div>
+
+  <div>
+    <%= f.submit "Comment"%>
+  </div>
+<% end %>

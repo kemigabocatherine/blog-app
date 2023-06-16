@@ -1,0 +1,18 @@
+<nav><%= link_to "Home", users_path(@user), class: "link" %></nav>
+<br>
+<h3><%= @post.title%> by <%= @post.user.name %></h3>
+<%= @post.text%>
+<div class="comments-container"> 
+  <% @comments.includes([:user]).each do |comment| %>
+    <%= render comment %>
+    <hr>
+  <% end %>
+</div>
+<p>Likes: <%= @post.likes_counter%><p>
+<%= form_with url: "/users/#{@user.id}/posts/#{@post.id}/likes" do |liked|%>
+  <%= liked.submit "Like Post", class: "like_button"%>
+<%end%>
+
+
+<%= render "comments/form" %>
+
