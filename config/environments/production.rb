@@ -62,8 +62,6 @@ Rails.application.configure do
   # config.secret_key_base=`04ff5123ff3c4afcf3f030602c514c1c`
   `secret_key_base` <%= Rails.application.credentials.secret_key_base %>
 
-  # config.read_encrypted_secrets = true
-
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "myblog_production"
@@ -96,4 +94,4 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-end-of-input
+end
