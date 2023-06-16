@@ -61,6 +61,8 @@ Rails.application.configure do
   # config.cache_store = :mem_cache_store
   # config.secret_key_base=`04ff5123ff3c4afcf3f030602c514c1c`
 
+  config.read_encrypted_secrets = true
+
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "myblog_production"
