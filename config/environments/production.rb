@@ -60,8 +60,9 @@ Rails.application.configure do
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
   # config.secret_key_base=`04ff5123ff3c4afcf3f030602c514c1c`
-  production:
-    secret_key_base: <%= Rails.application.credentials.secret_key_base %>
+  # production:
+  #   secret_key_base: <%= Rails.application.credentials.secret_key_base %>
+  config.secret_key_base = ENV["SECRET_KEY_BASE"] 
 
   config.read_encrypted_secrets = true
 
